@@ -1,2 +1,215 @@
 # Index.-Html
-Project i have cerated
+Project i have created
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Your Name</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; scroll-behavior: smooth; }
+    .navbar-nav .nav-link { font-weight: 500; }
+    
+    /* Header */
+    header {
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      color: white;
+      padding: 150px 0;
+      text-align: center;
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top:0; left:0; width:100%; height:100%;
+      background-color: rgba(0,0,0,0.5);
+    }
+    header .header-content { position: relative; z-index: 1; }
+    header h1 { font-size: 3rem; }
+    header p { font-size: 1.25rem; }
+    
+    section { padding: 60px 0; }
+    
+    /* About */
+    .about img {
+      max-width: 220px;
+      border-radius: 50%;
+      border: 5px solid #0d6efd;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    }
+    
+    /* Projects */
+    .card img { height: 180px; object-fit: cover; }
+    .card:hover { transform: translateY(-5px); transition: 0.3s; box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
+    
+    /* Skills */
+    .skills .progress { height: 20px; }
+    
+    /* Footer */
+    footer { background: #212529; color: white; padding: 20px 0; }
+    footer a { color: #0d6efd; margin: 0 10px; font-size: 1.5rem; text-decoration: none; }
+    footer a:hover { color: #6610f2; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">MyPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="header-content container">
+      <h1>Your Name</h1>
+      <p>Front-End Developer | Web Enthusiast</p>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="about text-center">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="mt-3">I am a passionate web developer creating interactive web applications. I enjoy exploring new technologies and bringing ideas to life through code.</p>
+      <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=400&q=80" alt="Profile Picture" class="mt-4">
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects bg-light">
+    <div class="container">
+      <h2 class="text-center">Projects</h2>
+      <div class="row mt-4">
+        <!-- Project One with real sample image -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="https://images.unsplash.com/photo-1593642532400-2682810df593?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Project One">
+            <div class="card-body">
+              <h5 class="card-title">Project One</h5>
+              <p class="card-text">A task tracking web app.</p>
+              <p><strong>Technologies:</strong> HTML, CSS, JS</p>
+              <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+              <a href="#" class="btn btn-outline-dark btn-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project Two -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="https://images.unsplash.com/photo-1593642532871-8b12e02d091c?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Project Two">
+            <div class="card-body">
+              <h5 class="card-title">Project Two</h5>
+              <p class="card-text">E-commerce website with cart functionality.</p>
+              <p><strong>Technologies:</strong> Bootstrap, JS</p>
+              <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+              <a href="#" class="btn btn-outline-dark btn-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project Three -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Project Three">
+            <div class="card-body">
+              <h5 class="card-title">Project Three</h5>
+              <p class="card-text">Portfolio showcasing creative projects.</p>
+              <p><strong>Technologies:</strong> HTML, CSS, Bootstrap</p>
+              <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+              <a href="#" class="btn btn-outline-dark btn-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="text-center">Skills</h2>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <p>HTML</p>
+          <div class="progress mb-3"><div class="progress-bar bg-primary" style="width:90%">90%</div></div>
+          <p>CSS</p>
+          <div class="progress mb-3"><div class="progress-bar bg-success" style="width:85%">85%</div></div>
+          <p>JavaScript</p>
+          <div class="progress mb-3"><div class="progress-bar bg-warning" style="width:75%">75%</div></div>
+        </div>
+        <div class="col-md-6">
+          <p>Bootstrap</p>
+          <div class="progress mb-3"><div class="progress-bar bg-info" style="width:80%">80%</div></div>
+          <p>React</p>
+          <div class="progress mb-3"><div class="progress-bar bg-danger" style="width:70%">70%</div></div>
+          <p>Git/GitHub</p>
+          <div class="progress mb-3"><div class="progress-bar bg-secondary" style="width:75%">75%</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact bg-light">
+    <div class="container">
+      <h2 class="text-center">Contact Me</h2>
+      <form class="mt-4 col-md-8 mx-auto" onsubmit="handleSubmit(event)">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" id="name" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" class="form-control" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    <div>
+      <a href="https://github.com" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      alert("Thank you! Your message has been received.");
+    }
+  </script>
+
+</body>
+</html>
